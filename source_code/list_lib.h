@@ -14,6 +14,6 @@ typedef struct list List;
 List *list_new();
 List *list_append(List *l, int value_to_add);
 List *remove_duplicates(List *l);
-List *lread();
+List *lread(const char *path);
 void lwrite(List *l);
 #endif //LIST_LIB_LIST_LIB_H

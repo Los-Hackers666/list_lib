@@ -5,8 +5,9 @@
 #include "list_lib.h"
 
 int main(int argc, char **argv) {
-    List *l = lread();
+    List *l = lread(*(argv + 1));
     remove_duplicates(l);
     lwrite(l);
+
     return 0;
 }

@@ -62,28 +62,34 @@ List *remove_duplicates(List *l)
     Node *value_to_compare = l->head;
     Node *tmp;
 
+    // check if there is something to compare
     while(value_to_compare->next != NULL)
-    {// check if there is something to compare
+    {
         Node *current_position = value_to_compare;
+        // check that the position following the compare value is not null
         while(current_position->next != NULL)
-        {// check that the position following the compare value is not null
+        {
+            // if the value of value_to_compare is equal to the value of the next node
             if(value_to_compare->value == current_position->next->value)
-            { // if the value of the comparison position is equal to the following
+            {
                 tmp = current_position->next;// create a temporary node that stores detected copy
                 current_position->next = current_position->next->next;// change to the next position
+
                 free(tmp);// release the memory occupied by the repeated node
-            }else{// if the value is not repeated we scan the next one
+            } else // go to the next node
+            {
                 current_position = current_position->next;
             }
         }
-        value_to_compare = value_to_compare->next;// the value to compare is change to the next node
+
+        value_to_compare = value_to_compare->next;//value_to_compare is assigned to the next node on the list
     }
 
     return l;// return the processed list
 }
 
 // file handling
-List *lread()
+List *lread(const char *path)
 {
     FILE *file = NULL;
 
@@ -92,13 +98,13 @@ List *lread()
 
     List* l = list_new();
 
-    file = fopen("input.txt","r");
+    file = fopen(path,"r");
 
     char buffer[CHARS_IN_INT];
 
     if(file == NULL)
     {
-        printf("Cannot open file %s", "input.txt");
+        printf("Cannot open file %s", path);
         return l;
     }
 
@@ -108,6 +114,8 @@ List *lread()
         value = strtol(buffer, &endptr, 0);
         list_append(l, value);
     }
+
+    fclose(file);
 
     return l;
 }
@@ -127,4 +135,6 @@ void lwrite(List *l)
         fprintf(results, "%d\n", current->value);
         current = current->next;
     }
+
+    //fclose(results);
 }
