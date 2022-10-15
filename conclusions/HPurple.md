@@ -8,9 +8,9 @@ buscaba eliminar los valores repetidos que pudieran existir en un lista de enter
 en nuestro proceso de manipular listas ligadas simples.
 
 Buscamos que la metodología de implementación  manipulación de las listas ligada fuera bastante similar al que implementamos
-en clase y al parecer es la manera estándar de trabajar con este tipo de contenedores. A través de estructuras
-y nodos con memoria asignada por `malloc()` que según se requieran, formarán los elementos de la lista y que nos 
-permitirán recorrerlos.
+en clase y al parecer es la manera estándar de trabajar con este tipo de contenedores: a través de estructuras
+y nodos con memoria asignada por `malloc()` según se requieran, mismos que serán los elementos de la lista y que nos 
+permitirá recorrerlos.
 
 De nuestra implementación original realizada en clase, decidimos quedarnos solamente con funciones específicas 
 que se vuelven útiles en el objetivo de nuestra pequeña librería, entre ellas, `list_new()` y `list_append()`
