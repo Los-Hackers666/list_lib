@@ -22,7 +22,7 @@ void lwrite(List *l);
 
 #endif //LIST_LIB_LIST_LIB_H
 ```
-![]([https://i.ytimg.com/vi/HHm9hPbEWXc/mqdefault.jpg](http://images3.memedroid.com/images/UPLOADED602/6195170ac1774.jpeg))
+
 
 Important notes
 - The input file must only contain integer values in the range **-2147483648 to 2147483647**, i.e. a signed integer. This can be changed to be an unsigned integer type by changing the `CHARS_IN_INT` symbol in [`list_lib.h`](https://github.com/Los-Hackers666/list_lib/blob/main/source_code/list_lib.h) to the value **10**.
@@ -30,6 +30,7 @@ Important notes
 - The values inside of the input file must be separated by line breaks.
 - The function `lwrite()` creates a single file `results.txt` that cannot be changed, but the implementation can be modified to accomodate a specific need.
 
+![](http://images3.memedroid.com/images/UPLOADED602/6195170ac1774.jpeg)
 
 ## `remove_duplicates()`
 
