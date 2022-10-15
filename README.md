@@ -24,7 +24,7 @@ void lwrite(List *l);
 ```
 
 Important notes
-- The input file must only contain integer values in the range **-2147483648 to 2147483647**, i.e. a signed integer. This can be changed to be an unsigned int type by changing the `CHARS_IN_INT` symbol in `[list_lib.h](https://github.com/Los-Hackers666/list_lib/blob/main/source_code/list_lib.h)` to the value **10**.
+- The input file must only contain integer values in the range **-2147483648 to 2147483647**, i.e. a signed integer. This can be changed to be an unsigned int type by changing the `CHARS_IN_INT` symbol in [`list_lib.h`](https://github.com/Los-Hackers666/list_lib/blob/main/source_code/list_lib.h) to the value **10**.
 - The symbol `CHARS_IN_INT` mentioned above accounts for the maximum number of characters in an integer.
 - The values inside of the input file must be separated by line breaks.
 
