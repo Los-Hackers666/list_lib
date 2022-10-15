@@ -19,7 +19,7 @@ si existen valores repetidos en la lista.
 
 Ahora bien, la lógica sobre la cual se desarolla el proceso de eliminación de duplicados, realmente se basa en comparar dos 
 valores de la lista y comprobar si los valores de cada uno de estos nodos son equivalentes, en caso de serlo, el valor más reciente 
-dentro de la lista será guardado en un temporal, eliminaremos el contenido de dicho nodo y reconectamos la lista con el 
+dentro de la lista será guardado en un temporal, eliminando de dicho nodo con la función `free()` y reconectamos la lista con el 
 nodo siguiente. Realmente no costó un tanto acercarnos a esta lógica sin emabrgo fue cuestión de abstraer los conceptos y 
 realmente moldear y mejorar nuestra propuesta inicial que básciamente se reducía a: "recorrer la lista y hacer NULL dicha posición"
 
