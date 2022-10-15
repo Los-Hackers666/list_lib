@@ -23,6 +23,7 @@ void lwrite(List *l);
 #endif //LIST_LIB_LIST_LIB_H
 ```
 
+
 Important notes
 - The input file must only contain integer values in the range **-2147483648 to 2147483647**, i.e. a signed integer. This can be changed to be an unsigned integer type by changing the `CHARS_IN_INT` symbol in [`list_lib.h`](https://github.com/Los-Hackers666/list_lib/blob/main/source_code/list_lib.h) to the value **10**.
 - The symbol `CHARS_IN_INT` mentioned above accounts for the maximum number of characters in an integer.
@@ -145,5 +146,7 @@ void lwrite(List *l)
 
 Takes a list as the argument, to write its contents to a `results.txt` file.
 The `while` loop iterates over the elements of the list, and prints them to the `results.txt` file, separating each of them with a line break.
+
+![](https://i.ytimg.com/vi/HHm9hPbEWXc/mqdefault.jpg)
 
 
