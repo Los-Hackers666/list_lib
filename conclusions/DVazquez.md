@@ -13,6 +13,8 @@ por todos los elementos de la lista, cuando eliminamos el duplicado de la lista 
 El funcionamiento de `remove_duplicates` consiste en comenzar a comparar el head de la lista, en donde lo vamos a guaradar en la variable `value_to_compare`, el 
 `current_position` va a tener por valor el `value_to_compare`; el primer ciclo While va a llevarnos al final de la lista y el segundo while nos va a ayudar a realizar las comparaciones entre los nodos, si se cumple la condicion `if(value_to_compare->value == current_position->next->value)` procedemos a guardar         `current_position->next` en tmp para liberar ese nodo que se repite con  `free(tmp)`, despues de liberar esa posicion nos movemos al siguiente nodo incluso si no entra a la condicion if nos movemos a la siguiente posicion (eso quiere decir que no se repite nuestro value_to_compare).
 
+Otra de las funciones que agregamos en nuestra libreria fueron  `lwrite() ` y  `lread() `, esas funciones lo que nos permiten es escribir los resultados en un txt y leer el input desde un .txt, el funcionamiento de `lread() ` consiste en leer cada linea del archivo y hacerle append a ese valor en la lista; por ultimo el `lwrite() ` simplemente introduce los valores de cada nodo en un archivo de texto llamado `results.txt`.
+
 Para la parte de la lectura de archivos fue algo complicado en lo personal y tuvimos que recurrir a investigar
 por otros medios para poder implementar la solucion, sinceramente este punto me resulta frustrante a nivel personal mas sin embargo siento 
 que verme en esta situacion me ayuda a desarrollar habilidades de investigacion y comprension de librerias que en un futuro me ayudaran a 
