@@ -1,0 +1,9 @@
+# Raul Andrés Villalpando Barba 
+
+## Conclusiones
+
+Cuando comenzamos el proyecto teniamos algo muy claro y es que ibamos a reutilizar la implementacion de listas manejadas por nodos que desarrollamos en el salon de clases. No tendría sentido empezar de cero y perder tiempo en como implementar listas para despues crear el algoritmo que removiera los duplicados. El primer problema que tuvimos fue que nuestra primer  version del repositorio de github incluia los archivos para que se compilara en CLion el proyecto, pero solamente en la computadora de el compañero que lo creó. Decidimos trabajar con un proyecto de código compartido en CLion almacenado en mi computadora. Una vez teníamos la librería que manejaba listas vista en clase listamos que funciones nos iban a servir y cuales no. 
+
+Seleccionamos cuales usaríamos y donde. El algoritmo como tal para remover los duplicados no fué tan díficil de implementar. A pesar de que tenía un error que nos trabó el progreso, esteera que no avanzabamos del nodo a escanear en el while, también teníamos algunas fallas lógicas. Comprobamos, que funcionaba el algoritmo imprimiendo la lista en consola, pero ahora nosfaltaba realizar todo con archivos. Esta fue la segunda parte más complicada del proceso. Nos basamos en como manejamos archivos con "pokemons" en clase. Pero, tuvímos que hacer mucha investigación por fuera, el problema principal era que leíamos los números como strings y no como enteros. Decidimos implementar la librería stdlib.h para realizar las conversiones pertinentes. 
+
+Al final nuestro único problema era escribir el resultado de la lista en otro archivo, no encontrabamos el error y resultó que era algo más simple de lo que pensamos, en el header de la librería habíamos puesto una firma diferente a la de la función final que implementamos para escribir el resultado.
