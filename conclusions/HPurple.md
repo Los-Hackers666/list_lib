@@ -13,7 +13,7 @@ y nodos con memoria asignada por `malloc()` según se requieran, mismos que ser�
 permitirá recorrerlos.
 
 De nuestra implementación original realizada en clase, decidimos quedarnos solamente con funciones específicas 
-que se vuelven útiles en el objetivo de nuestra pequeña librería, entre ellas, `list_new()` y `list_append()`
+que se vuelven útiles en el objetivo de nuestra pequeña librería, entre ellas `list_new()` y `list_append()`;
 pues solamente nos interesa crear listas, mostrarlas y ser capaces de agregarles elementos previo a que validemos
 si existen valores repetidos en la lista.
 
