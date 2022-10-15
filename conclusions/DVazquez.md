@@ -10,8 +10,8 @@ cual era el de movernos de nodos ya una vez que habiamos eliminado los duplicado
 La logica que utilizamos para diseñar el algoritmo consistio en realizar la comparacion del elemento que queremos remover sus duplicados
 por todos los elementos de la lista, cuando eliminamos el duplicado de la lista solo realizamos las reconexiones pertinentes entre los nodos. 
 
-El funcionamiento de ´remove_duplicates()´ consiste en comenzar a comparar el head de la lista, en donde lo vamos a guaradar en la variable ´value_to_compare´, el 
-´current_position´ va a tener por valor el ´value_to_compare´; el primer ciclo While
+El funcionamiento de `remove_duplicates` consiste en comenzar a comparar el head de la lista, en donde lo vamos a guaradar en la variable `value_to_compare`, el 
+`current_position` va a tener por valor el `value_to_compare`; el primer ciclo While va a llevarnos al final de la lista y el segundo while nos va a ayudar a realizar las comparaciones entre los nodos
 
 Para la parte de la lectura de archivos fue algo complicado en lo personal y tuvimos que recurrir a investigar
 por otros medios para poder implementar la solucion, sinceramente este punto me resulta frustrante a nivel personal mas sin embargo siento 
