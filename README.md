@@ -77,6 +77,7 @@ Verify if the value of value_to_compare is equal to the value of the next node. 
 A temporary node is created that stores the detected copy and go to the next position. The memory occupied by the repeated node is released.
 ´value_to_compare´ is assigned to the next node on the list.
 Finally, the processed list is returned.
+![]([https://i.ytimg.com/vi/HHm9hPbEWXc/mqdefault.jpg](http://images3.memedroid.com/images/UPLOADED602/6195170ac1774.jpeg))
 
 ## `lread()`
 
